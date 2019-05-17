@@ -1,0 +1,32 @@
+{
+  "name": "reactjs-starter",
+  "author": "Kris Grint",
+  "scripts": {
+    "build": "parcel build ./index.html",
+    "start": "parcel serve ./index.html --port 3000",
+    "test": "mocha --require @babel/register ./test/**/*Test.js",
+    "prettier": "prettier --write \"./{src,test}/**/*.js*\""
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.0.0",
+    "@babel/register": "7.4.4",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.13.0",
+    "expect": "24.8.0",
+    "fetch-mock": "7.3.3",
+    "jsdom": "15.1.0",
+    "mocha": "6.1.4",
+    "parcel-bundler": "1.12.3",
+    "react-hot-loader": "4.8.5",
+    "sinon": "7.3.2"
+  },
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
+}
