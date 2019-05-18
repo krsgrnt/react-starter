@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'normalize.css';
 
-import App from './App';
+import Hooks from './Hooks';
 
 if (module.hot) {
     module.hot.accept();
 }
 
-ReactDOM.render(<App mode='dev' />, document.getElementById('root'));
+ReactDOM.render(<Hooks />, document.getElementById('root'));
