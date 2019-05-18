@@ -6,4 +6,4 @@ if (module.hot) {
     module.hot.accept();
 }
 
-ReactDOM.render(<App mode="dev" />, document.getElementById('root'));
+ReactDOM.render(<App mode='dev' />, document.getElementById('root'));

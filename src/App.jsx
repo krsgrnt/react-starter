@@ -5,8 +5,9 @@ class App extends Component {
     render() {
         const mode = this.props.mode;
         return (
-            <div className="App">
-                <h1>Hello, World! [{mode}]</h1>
+            <div className='App'>
+                <h1>Hello, World!</h1>
+                <p>Running in {mode} mode</p>
             </div>
         );
     }
