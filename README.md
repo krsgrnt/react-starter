@@ -1,9 +1,10 @@
-# React Starter
+# What's all this then?
 
-This is a set of starter files to quickly prototype a React component, based on some personal package preferences.
+This is a set of starter files to quickly prototype a React application, based on some personal package preferences.
 
 ## What's included
 
+- styled-components
 - Babel
 - Parcel
 - React Hot Loader
