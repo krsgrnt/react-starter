@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 
 const App = props => {
     const [value, setValue] = useState(false);
 
     return (
-        <div className='App'>
+        <div className="App">
             <h1>Hello, World!</h1>
             <p>Running in {props.mode} mode</p>
             <Button
                 onClick={() => {
                     setValue(!value);
                 }}>
-                {value ? 'Ouch!' : 'Click me'}
+                {value ? "Ouch!" : "Click me"}
             </Button>
         </div>
     );
