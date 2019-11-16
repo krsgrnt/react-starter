@@ -1,19 +1,23 @@
 {
   "name": "reactjs-starter",
   "author": "Kris Grint",
+  "repository": "http://github.com/krsgrnt/react-starter",
+  "license": "ISC",
+  "version": "1.0.0",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "parcel build ./index.html",
     "start": "parcel serve ./index.html --port 3000",
-    "test": "mocha --require @babel/register ./test/**/*Test.js",
-    "prettier": "prettier --write \"./{src,test}/**/*.js*\""
+    "test": "jest --env=jsdom",
+    "lint": "eslint ./{src,test} --fix"
   },
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.0",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.6.0",
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "@babel/register": "^7.7.0",
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.6",
     "enzyme": "^3.10.0",
@@ -21,24 +25,29 @@
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "expect": "^24.9.0",
-    "fetch-mock": "^7.3.9",
-    "jsdom": "^15.1.1",
-    "mocha": "^6.2.0",
+    "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2",
-    "react-hot-loader": "^4.12.13",
-    "sinon": "^7.4.2"
+    "prettier": "^1.19.1",
+    "react-hot-loader": "^4.12.18"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "styled-components": "^4.3.2"
   },
   "browserslist": [
     "> 2.5%"
-  ]
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "setupFilesAfterEnv": [
+      "./test/setup.js"
+    ]
+  }
 }

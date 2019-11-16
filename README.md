@@ -8,23 +8,20 @@ This is a set of starter files to quickly prototype a React application, based o
 - Babel
 - Parcel
 - React Hot Loader
-- Prettier
-- Mocha
+- eslint
+- Jest
 - Enzyme
-- Sinon
-
-Full list of dependencies is in package.json.
 
 ## Installation
 
-```yarn install```
+`yarn install`
 
 ## Scripts
 
-```yarn build``` - create a package for distribution
+`yarn build` - create a package for distribution
 
-```yarn start``` - start in development mode with HMR on localhost:3000
+`yarn start` - start in development mode with HMR on localhost:3000
 
-```yarn test``` - run files in the test/ directory
+`yarn test` - run files in the test/ directory
 
-```yarn prettier``` - format JS files in the src/ and test/ directories
+`yarn lint` - format JS files in the src/ and test/ directories
